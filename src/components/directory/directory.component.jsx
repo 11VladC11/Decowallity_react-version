@@ -9,16 +9,19 @@ const categories = [
 		id:1,
 		title:'small designs',
 		imageUrl: vikingImg,
+		route:'shop/small-designs'
 	},
 	{
 		id:2,
 		title:'wall designs',
 		imageUrl:firstWallImg,
+		route:'/shop/wall-designs'
 	},
 	{
 		id:3,
 		title:'accessories',
 		imageUrl:accessoriesImg,
+		route:'/shop/accessories',
 	},
 	{
 		id:4,

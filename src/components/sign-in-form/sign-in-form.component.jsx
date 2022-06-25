@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FormInput from "../../form-input/form-input.component";
+import FormInput from "../form-input/form-input.component";
 import { ButtonsContainer, SignInContainer } from "./sign-in-form.style";
 import Button,{ BUTTON_TYPE_CLASSES }  from "../button/button.component";
 import { signInAuthUserWithEmailAndPassword, signInWithGooglePopup } from "../../utils/firebase/firebase.utils";

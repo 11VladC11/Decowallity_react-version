@@ -19,17 +19,16 @@ const signInWithGoogle = async()=>{
 	await signInWithGooglePopup();
 }
 
-const handleSubmit = async (event)=>{
-	event.preventDefault();
-	try{
-		await signInAuthUserWithEmailAndPassword(email,password);
-		resetFormFields();
-		console.log('mere')
-	}catch(error){
-		console.log('user sign in failed', error);
+const handleSubmit = async (event) => {
+    event.preventDefault();
 
-	}
-}
+    try {
+      await signInAuthUserWithEmailAndPassword(email, password);
+      resetFormFields();
+    } catch (error) {
+      alert('user sign in failed', error);
+    }
+  };
 
 const handleChange =(event)=>{
 	const {name, value} = event.target;
